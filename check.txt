@@ -1,0 +1,53 @@
+Comparing unrelated types
+UseOptionGetOrElse
+UseQuantifierFuncNotFold
+UseUntilNotToMinusOne
+MergeNestedIfs
+UnextendedSealedTrait
+UseLastOptionNotIf
+Method returning Any
+UnlikelyEquality
+TypeToType
+DuplicateIfBranches
+Empty if expression
+While true loop
+InvariantCondition
+NumberInstanceOf
+InefficientUseOfListSize
+UseLastNotReverseHead
+IdenticalStatements
+Avoid Traversable.size != 0
+UseExistsNotFilterIsEmpty
+Empty interpolated string
+CloseSourceFile
+Var could be val
+UseIfExpression
+UseExistsNotFindIsDefined
+Use of Option.get
+UndesirableTypeInference
+Variable shadowing
+UseHeadNotApply
+Parameterless methods returns unit
+UnnecessaryElseBranch
+UseOptionForallNotPatMatch
+EmptyStringInterpolator
+IdenticalCaseBodies
+Empty while block
+IdenticalIfElseCondition
+UseMinOrMaxNotSort
+Incorrectly named exceptions
+InvariantReturn
+Use of asInstanceOf
+Use of Try.get
+Null assignment
+Constant if expression
+AssigningOptionToNull
+Avoid Traversable.size == 0
+IdenticalIfCondition
+UnusedParameter
+Unnecessary conversion
+Use of Map.get().getOrElse instead of Map.getOrElse
+Empty catch block
+Unused parameter
+Lonely sealed trait
+Broken odd check
