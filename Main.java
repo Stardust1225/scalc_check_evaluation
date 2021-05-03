@@ -34,7 +34,7 @@ public class Main {
 
         int count = 0;
 
-        for (File file : new File("D:\\project\\evaluate-scala-checks\\data\\combina_log").listFiles()) {
+        for (File file : new File("combina_log").listFiles()) {
             boolean inList = false;
             for (String s : successList)
                 if (file.getAbsolutePath().contains(s)) {
@@ -88,8 +88,8 @@ public class Main {
                     "/bin/sh",
                     "-c",
                     "java " +
-                            " -Dsbt.global.base=/pub/data/zhangx/data/relylib" + (count % 10) + "/.sbt " +
-                            " -Dsbt.ivy.home=/pub/data/zhangx/data/relylib" + (count % 10) + "/.ivy2 " +
+                            " -Dsbt.global.base=/.sbt " +
+                            " -Dsbt.ivy.home=/.ivy2 " +
                             " -jar sbt-launch.jar ~compile");
 
             builder.directory(new File(repoPath));
@@ -105,7 +105,7 @@ public class Main {
 
             List<String> warningContent = Files.readAllLines(Paths.get(warningFile.getAbsolutePath()));
 
-            File timeFile = new File("/home/zhangxin19/combina_time_fp/" + warningFile.getName());
+            File timeFile = new File("./" + warningFile.getName());
             timeFile.createNewFile();
             FileOutputStream timeOutputStream = new FileOutputStream(timeFile);
 
